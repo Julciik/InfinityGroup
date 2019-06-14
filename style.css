@@ -22,9 +22,11 @@ li,
 img[alt],
 label,
 input,
-span {
+span,
+q {
     font-family: 'Mada', sans-serif;
     font-weight: 300;
+    color: #253421;
 }
 
 h1,
@@ -32,6 +34,7 @@ h2,
 h4 {
     font-family: 'Homenaje', sans-serif;
     font-weight: 400;
+    color: #253421;
 }
 
 button:hover {
@@ -60,7 +63,7 @@ button:focus {
     font-family: 'Homenaje', sans-serif;
     font-weight: 400;
     padding: 0 46px 40px 46px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #474747;
 }
 
 /* ---- ARROWS ---- */
@@ -76,7 +79,7 @@ button:focus {
 }
 
 .arrows a:first-child {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #555;
 }
 
 /* ---- HEADER ---- */
@@ -175,11 +178,16 @@ button:focus {
     width: 650px;
     margin-right: 84px;
     margin-left: 46px;
+    color: #fff;
 }
 
 .cookies a {
     color: #62c017;
     font-weight: 400;
+}
+
+.cookies span {
+    color: #fff;
 }
 
 .cookies img {
@@ -203,51 +211,47 @@ button:focus {
 
 /* ---- SECTIONS ---- */
 
-.comma {
-    font-size: 61px;
-    font-weight: 900;
-    position: absolute;
-}
-
 /* ---- MISSION ----- */
 
 #mission {
     display: flex;
     height: 550px;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     position: relative;
 }
 
 #mission h2 {
     font-size: 50px;
+    margin-top: 86px;
     margin-bottom: 50px;
 }
 
-#mission .comma {
+#mission blockquote {
+    position: relative;
+    width: 55%;
+}
+
+#mission q {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#mission q::before {
+    content: ",,";
+    position: absolute;
     font-size: 61px;
     font-weight: 900;
-    position: absolute;
-    top: 30%;
-    left: 22%;
-}
-
-#mission p {
-    font-size: 22px;
-    width: 50%;
-}
-
-#mission .comma {
-    top: 33%;
-    left: 22%;
+    left: -50px;
+    top: -70px;
+    width: 90px;
 }
 
 /* ---- CLIENTS ---- */
 
 #clients {
     position: relative;
-    height: 100vh;
+    height: 720px;
     width: 100%;
     background: url(img/bg/clients.png) top center no-repeat;
     background-size: cover;
@@ -260,7 +264,7 @@ button:focus {
 #clients h2 {
     color: #fff;
     font-size: 50px;
-    margin-top: 125px;
+    margin-top: 120px;
 }
 
 .clientsWrapper {
@@ -273,18 +277,33 @@ button:focus {
 .clientsWrapper img {
     height: 377px;
     width: 448px;
-    margin: 30px 64px 0 160px;
+    margin: 30px 40px 0 100px;
 }
 
-.clientsWrapper p:first-of-type {
-    font-size: 30px;
+.clientsWrapper blockquote {
     width: 550px;
-    margin-top: 75px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.clientsWrapper p:nth-of-type(2) {
-    margin-top: 35px;
-    margin-bottom: 38px;
+.clientsWrapper q {
+    color: #3c3c3c;
+    font-size: 30px;
+}
+
+.clientsWrapper q::before {
+    content: ",,";
+    position: absolute;
+    font-size: 61px;
+    font-weight: 900;
+    left: -50px;
+    top: -55px;
+    width: 90px;
+}
+
+.clientsWrapper p {
+    margin-bottom: 30px;
     font-size: 22px;
 }
 
@@ -306,15 +325,10 @@ button:focus {
     display: inline-block;
 }
 
-.clientsWrapper .comma {
-    top: 27%;
-    left: 41%;
-}
-
 .circles {
     height: 15px;
     width: 85px;
-    margin-top: 60px;
+    margin-top: 75px;
     margin-left: 46px;
 }
 
@@ -325,6 +339,10 @@ button:focus {
     background-color: rgba(255, 255, 255, .7);
     display: inline-block;
     margin: 0 5px;
+}
+
+.circles div:hover {
+    cursor: pointer;
 }
 
 .circles .active {
