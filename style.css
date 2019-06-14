@@ -399,7 +399,7 @@ button:focus {
 
 /* ---- MAP ---- */
 
-#map {
+#contactMap {
     position: relative;
     height: 490px;
     width: 100%;
@@ -408,7 +408,7 @@ button:focus {
     background-size: cover;
 }
 
-#map img:first-child {
+#contactMap img:first-child {
     height: 33px;
     width: 33px;
     margin-top: 145px;
@@ -416,26 +416,26 @@ button:focus {
     margin-right: 20px;
 }
 
-#map h4 {
+#contactMap h4 {
     font-family: 'Mada', sans-serif;
     font-weight: 400;
     margin-top: 150px;
 }
 
-#map h4,
-#map p {
+#contactMap h4,
+#contactMap p {
     font-size: 22px;
 }
 
-#map p {
+#contactMap p {
     line-height: 25px;
 }
 
-#map p:first-of-type {
+#contactMap p:first-of-type {
     margin: 40px 0;
 }
 
-#map img:nth-of-type(2) {
+#contactMap img:nth-of-type(2) {
     height: 42px;
     width: 30px;
     position: absolute;
@@ -445,6 +445,40 @@ button:focus {
 
 /* ---- CONTACT ---- */
 
-#contact {
+.contact {
     position: relative;
+    background: url(img/bg/contact.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
 }
+
+.contact .howToContact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.contact button {
+    border-radius: 3px;
+    background-color: rgb(98, 192, 23);
+    font-family: 'Homenaje', sans-serif;
+    font-weight: 400;
+    width: 263px;
+    height: 42px;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact button span {
+    color: #fff;
+}
+
+.contact .form {
+    display: none;
+
+
