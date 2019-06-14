@@ -27,7 +27,7 @@ q {
     font-family: 'Mada', sans-serif;
     font-weight: 300;
     color: #253421;
-    letter-spacing: -1px;
+    letter-spacing: -.8px;
 }
 
 h1,
@@ -493,5 +493,7 @@ footer {
 
 footer p {
     padding: 20px 0;
+    margin-left: 200px;
     color: #8f8f8f;
+    font-size: 12px;
 }
