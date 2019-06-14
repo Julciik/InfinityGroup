@@ -27,6 +27,7 @@ q {
     font-family: 'Mada', sans-serif;
     font-weight: 300;
     color: #253421;
+    letter-spacing: -1px;
 }
 
 h1,
@@ -35,6 +36,7 @@ h4 {
     font-family: 'Homenaje', sans-serif;
     font-weight: 400;
     color: #253421;
+    letter-spacing: -1px;
 }
 
 h2 {
@@ -329,7 +331,6 @@ button:focus {
 
 .circles {
     height: 15px;
-    width: 85px;
     margin-top: 75px;
     margin-left: 46px;
 }
@@ -340,7 +341,7 @@ button:focus {
     height: 15px;
     background-color: rgba(255, 255, 255, .7);
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .circles div:hover {
@@ -404,16 +405,21 @@ button:focus {
     width: 100%;
     display: flex;
     background: url(img/bg/map.png) center no-repeat;
+    background-size: cover;
 }
 
 #map img:first-child {
     height: 33px;
     width: 33px;
+    margin-top: 145px;
+    margin-left: 250px;
+    margin-right: 20px;
 }
 
 #map h4 {
     font-family: 'Mada', sans-serif;
     font-weight: 400;
+    margin-top: 150px;
 }
 
 #map h4,
@@ -421,9 +427,20 @@ button:focus {
     font-size: 22px;
 }
 
+#map p {
+    line-height: 25px;
+}
+
+#map p:first-of-type {
+    margin: 40px 0;
+}
+
 #map img:nth-of-type(2) {
     height: 42px;
     width: 30px;
+    position: absolute;
+    right: 24.5%;
+    top: 38%;
 }
 
 /* ---- CONTACT ---- */
