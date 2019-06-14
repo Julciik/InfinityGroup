@@ -400,6 +400,30 @@ button:focus {
 
 #map {
     position: relative;
+    height: 490px;
+    width: 100%;
+    display: flex;
+    background: url(img/bg/map.png) center no-repeat;
+}
+
+#map img:first-child {
+    height: 33px;
+    width: 33px;
+}
+
+#map h4 {
+    font-family: 'Mada', sans-serif;
+    font-weight: 400;
+}
+
+#map h4,
+#map p {
+    font-size: 22px;
+}
+
+#map img:nth-of-type(2) {
+    height: 42px;
+    width: 30px;
 }
 
 /* ---- CONTACT ---- */
