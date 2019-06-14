@@ -209,7 +209,6 @@ button:focus {
     position: absolute;
 }
 
-
 /* ---- MISSION ----- */
 
 #mission {
@@ -224,6 +223,14 @@ button:focus {
 #mission h2 {
     font-size: 50px;
     margin-bottom: 50px;
+}
+
+#mission .comma {
+    font-size: 61px;
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    left: 22%;
 }
 
 #mission p {
