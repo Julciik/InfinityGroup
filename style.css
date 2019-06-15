@@ -276,12 +276,12 @@ button:focus {
     height: inherit;
     width: inherit;
     flex-direction: row;
+    justify-content: center;
 }
 
 .clientsWrapper img {
     height: 377px;
-    width: 448px;
-    margin: 30px 40px 0 100px;
+    width: 311px;
 }
 
 .clientsWrapper blockquote {
@@ -327,6 +327,10 @@ button:focus {
     border: 1px solid #fff;
     text-align: center;
     display: inline-block;
+}
+
+.comment {
+    margin-left: 64px;
 }
 
 .circles {
@@ -497,3 +501,21 @@ footer p {
     color: #8f8f8f;
     font-size: 12px;
 }
+
+/* ---- RWD ---- */
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1200px) and (min-width: 900px) {}
+
+@media (max-width: 900px) and (min-width: 768px) {}
+
+@media (max-width: 768px) and (min-width: 600px) {}
+
+@media (max-width: 600px) and (min-width: 480px) {}
+
+
+@media (max-width: 480px) and (min-width: 320px) {}
+
+
+@media (max-width: 320px) {}
