@@ -50,6 +50,7 @@ button:hover {
 button:active {
     outline: 0;
     border: none;
+    transform: translate(1px, 1px);
 }
 
 button:focus {
@@ -78,6 +79,7 @@ button:focus {
     position: absolute;
     right: 0;
     bottom: 10%;
+    z-index: 99;
 }
 
 .arrows img {
@@ -125,7 +127,60 @@ button:focus {
     align-items: center;
 }
 
+/* ---- SCROLL MENU ---- */
+
+.scrollMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 950px;
+    background-color: #333333;
+    transition: .5s;
+}
+
+.scrollMenu div {
+    height: inherit;
+}
+
+.scrollMenu .menuIcon {
+    width: 100px;
+    background-color: #62c017;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scrollMenu .menuIcon span {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight 400;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 /* ---- NAV ---- */
+
+.logo {
+    z-index: 2;
+}
+
+.logo img {
+    padding: 0 17px;
+}
+
+.greenBar {
+    width: 100px;
+    height: 10px;
+    background-color: #62c017;
+    position: absolute;
+    top: 0;
+}
+
+.menu {
+    z-index: 1;
+}
 
 .menu ul {
     display: flex;
@@ -167,6 +222,11 @@ button:focus {
     text-decoration: none;
 }
 
+.menu a:hover {
+    color: #62c017;
+    transition: .3s;
+}
+
 /* ---- COOKIES ---- */
 
 .cookies {
@@ -189,6 +249,11 @@ button:focus {
 .cookies a {
     color: #62c017;
     font-weight: 400;
+}
+
+.cookies a:hover {
+    color: #fff;
+    transition: .3s;
 }
 
 .cookies span {
@@ -311,6 +376,11 @@ button:focus {
 
 .clientsWrapper a {
     color: #fff;
+}
+
+.clientsWrapper a:hover {
+    color: #3c3c3c;
+    transition: .3s;
 }
 
 
@@ -636,6 +706,22 @@ footer p {
         justify-content: space-evenly;
     }
 
+    .scrollMenu {
+        width: 700px;
+    }
+
+    .greenBar {
+        background-color: #62c017;
+        position: absolute;
+        top: 0;
+        left: 11.07%;
+    }
+}
+
+@media (max-width: 900px) {
+    .greenBar {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 600px) {
