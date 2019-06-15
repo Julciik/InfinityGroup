@@ -408,7 +408,7 @@ button:focus {
     width: 100%;
     display: flex;
     background: url(img/bg/map.png) center no-repeat;
-    background-size: 100%;
+    background-size: auto;
 }
 
 #contactMap img {
@@ -489,9 +489,9 @@ footer {
 
 footer p {
     padding: 20px 0;
-    margin-left: 200px;
+    margin-left: 18.5%;
     color: #8f8f8f;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* ---- RWD ---- */
@@ -515,25 +515,73 @@ footer p {
         width: 30%;
     }
 
-    #contactMap {
-        background-size: auto;
-    }
-
-    #contactMap img: {
+    #contactMap img {
         margin-left: 10%;
     }
 
+    footer p {
+        font-size: 16px;
+    }
+}
 
 
+@media (max-width: 900px) and (min-width: 768px) {
 
-    @media (max-width: 900px) and (min-width: 768px) {}
+    .navBar {
+        padding-left: 0;
+        justify-content: center;
+    }
 
-    @media (max-width: 768px) and (min-width: 600px) {}
+    .cookies p {
+        font-size: 14px;
+        margin: 0 2%;
+    }
 
-    @media (max-width: 600px) and (min-width: 480px) {}
+    #mission q {
+        font-size: 18px;
+    }
+
+    .clientsWrapper q {
+        font-size: 23px;
+    }
+
+    .clientsWrapper p {
+        font-size: 19px;
+    }
+
+    .clientsWrapper img {
+        height: 317px;
+        width: 251px;
+    }
+
+    #products {
+        height: 1340px;
+    }
+
+    #products .imgOfProducts {
+        width: 700px;
+    }
+
+    #contactMap img {
+        margin-left: 5%;
+    }
+
+    #contactMap .numOfSection {
+        top: 50%;
+    }
+
+    .contact .howToContact {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 600px) {}
+
+@media (max-width: 600px) and (min-width: 480px) {}
 
 
-    @media (max-width: 480px) and (min-width: 320px) {}
+@media (max-width: 480px) and (min-width: 320px) {}
 
 
-    @media (max-width: 320px) {}
+@media (max-width: 320px) {}
