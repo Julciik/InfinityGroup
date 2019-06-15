@@ -789,7 +789,174 @@ footer p {
 
 }
 
-@media (max-width: 600px) and (min-width: 480px) {}
+@media (max-width: 600px) and (min-width: 480px) {
+
+    .arrows {
+        display: none;
+    }
+
+    .numOfSection {
+        display: none;
+    }
+
+    .headerTitle h1 {
+        font-size: 52px;
+    }
+
+    .logo img {
+        width: 53px;
+        height: 32px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .numOfSection span {
+        font-size: 15px;
+        padding: 0 40px 40px 40px;
+        border-bottom: 1px solid #474747;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .cookies {
+        justify-content: space-evenly;
+    }
+
+    .cookies p {
+        font-size: 10px;
+        margin: 0;
+        width: 60%;
+    }
+
+    .cookies img {
+        display: none;
+    }
+
+    #mission q {
+        font-size: 16px;
+    }
+
+    #mission q::before {
+        font-size: 46px;
+        top: -55px;
+        left: -40px;
+    }
+
+    .comment {
+        margin-left: 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .clientsWrapper blockquote {
+        text-align: center;
+    }
+
+    .clientsWrapper q {
+        font-size: 20px;
+    }
+
+    .clientsWrapper q::before {
+        font-size: 46px;
+        top: -45px;
+        left: -60px;
+    }
+
+    .clientsWrapper p {
+        font-size: 18px;
+    }
+
+    .clientsWrapper img {
+        display: none;
+    }
+
+    .circles {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    #products {
+        height: 1040px;
+    }
+
+    #products .imgOfProducts {
+        width: 450px;
+    }
+
+    #products p {
+        font-size: 16px;
+    }
+
+    #products .imgOfProducts img {
+        height: 97%;
+        width: 97%;
+    }
+
+    #products .imgOfProducts div {
+        height: 12%;
+        width: 15%;
+    }
+
+    #contactMap {
+        background-position: center right;
+        justify-content: flex-end;
+    }
+
+    #contactMap img {
+        display: none;
+    }
+
+    #contactMap h4,
+    #contactMap p {
+        font-size: 16px;
+    }
+
+    #contactMap h4 {
+        margin-top: 50px;
+    }
+
+    #contactMap p {
+        margin-right: 30px;
+    }
+
+    .contact .howToContact {
+        justify-content: space-evenly;
+    }
+
+    .contact button {
+        width: 150px;
+        font-size: 14px;
+        letter-spacing: -.5px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .navBar {
+        padding-left: 40px;
+        align-items: flex-start;
+        justify-content: flex-start
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+}
 
 
 @media (max-width: 480px) and (min-width: 320px) {}
