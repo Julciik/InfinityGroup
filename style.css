@@ -1018,9 +1018,7 @@ footer p {
     }
 
     #mission q::before {
-        font-size: 40px;
-        top: -50px;
-        left: -40px;
+        content: "";
     }
 
     .comment {
@@ -1049,9 +1047,7 @@ footer p {
     }
 
     .clientsWrapper q::before {
-        font-size: 40px;
-        top: -40px;
-        left: -45px;
+        content: "";
     }
 
     .clientsWrapper p {
@@ -1159,5 +1155,194 @@ footer p {
 
 }
 
+@media (max-width: 320px) {
 
-@media (max-width: 320px) {}
+    .arrows {
+        display: none;
+    }
+
+    .numOfSection {
+        display: none;
+    }
+
+    .headerTitle h1 {
+        font-size: 48px;
+    }
+
+    .logo img {
+        width: 53px;
+        height: 32px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .cookies {
+        justify-content: space-evenly;
+    }
+
+    .cookies p {
+        font-size: 10px;
+        margin: 0;
+        width: 50%;
+    }
+
+    .cookies img {
+        display: none;
+    }
+
+    .cookies button {
+        width: 60px;
+        font-size: 12px;
+    }
+
+    #mission {
+        text-align: center;
+        height: 620px;
+    }
+
+    #mission q {
+        font-size: 14px;
+    }
+
+    #mission q::before {
+        content: "";
+    }
+
+    .comment {
+        margin-left: 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #clients {
+        height: 600px;
+    }
+
+    #clients h2 {
+        margin-top: 60px;
+    }
+
+    .clientsWrapper blockquote {
+        text-align: center;
+    }
+
+    .clientsWrapper q {
+        font-size: 18px;
+    }
+
+    .clientsWrapper q::before {
+        content: "";
+    }
+
+    .clientsWrapper p {
+        font-size: 16px;
+    }
+
+    .clientsWrapper img {
+        display: none;
+    }
+
+    .clientsWrapper .tags li {
+        font-size: 12px;
+    }
+
+    .circles {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .circles div {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+    }
+
+    #products {
+        height: 1500px;
+        text-align: center;
+    }
+
+    #products .imgOfProducts {
+        width: 280px;
+    }
+
+    #products p {
+        font-size: 16px;
+    }
+
+    #products .imgOfProducts img {
+        height: 70%;
+        width: 100%;
+    }
+
+    #products .imgOfProducts div {
+        height: 13%;
+        width: 20%;
+    }
+
+    #contactMap {
+        background-position: center right;
+        justify-content: flex-end;
+        background-size: 1000px;
+        height: 450px;
+    }
+
+    #contactMap img {
+        display: none;
+    }
+
+    #contactMap h4,
+    #contactMap p {
+        font-size: 14px;
+    }
+
+    #contactMap h4 {
+        margin-top: 50px;
+    }
+
+    #contactMap p {
+        margin-right: 10px;
+    }
+
+    #contactMap p:first-of-type {
+        margin: 10px 0;
+    }
+
+    .contact .howToContact {
+        justify-content: space-evenly;
+    }
+
+    .contact button {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    footer p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+
+    .navBar {
+        padding-left: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .active li {
+        padding: 5px 5px;
+    }
+}
