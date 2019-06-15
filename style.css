@@ -121,7 +121,7 @@ button:focus {
     display: flex;
     height: 54px;
     padding-top: 31px;
-    padding-left: 208px;
+    padding-left: 15%;
     align-items: center;
 }
 
@@ -181,10 +181,9 @@ button:focus {
 .cookies p {
     font-size: 14px;
     line-height: 1.35;
-    width: 650px;
-    margin-right: 84px;
-    margin-left: 46px;
+    width: 570px;
     color: #fff;
+    margin: 0 5%;
 }
 
 .cookies a {
@@ -285,7 +284,6 @@ button:focus {
 }
 
 .clientsWrapper blockquote {
-    width: 550px;
     margin-top: 70px;
     margin-bottom: 30px;
     position: relative;
@@ -330,6 +328,7 @@ button:focus {
 }
 
 .comment {
+    width: 40%;
     margin-left: 64px;
 }
 
@@ -409,10 +408,10 @@ button:focus {
     width: 100%;
     display: flex;
     background: url(img/bg/map.png) center no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
-#contactMap img:first-child {
+#contactMap img {
     height: 33px;
     width: 33px;
     margin-top: 145px;
@@ -439,13 +438,6 @@ button:focus {
     margin: 40px 0;
 }
 
-#contactMap img:nth-of-type(2) {
-    height: 42px;
-    width: 30px;
-    position: absolute;
-    right: 24.5%;
-    top: 38%;
-}
 
 /* ---- CONTACT ---- */
 
@@ -504,18 +496,44 @@ footer p {
 
 /* ---- RWD ---- */
 
-@media (min-width: 1200px) {}
 
-@media (max-width: 1200px) and (min-width: 900px) {}
+@media (max-width: 1200px) and (min-width: 900px) {
 
-@media (max-width: 900px) and (min-width: 768px) {}
+    #mission q {
+        font-size: 20px;
+    }
 
-@media (max-width: 768px) and (min-width: 600px) {}
+    .clientsWrapper q {
+        font-size: 25px;
+    }
 
-@media (max-width: 600px) and (min-width: 480px) {}
+    .clientsWrapper p {
+        font-size: 20px;
+    }
+
+    .comment {
+        width: 30%;
+    }
+
+    #contactMap {
+        background-size: auto;
+    }
+
+    #contactMap img: {
+        margin-left: 10%;
+    }
 
 
-@media (max-width: 480px) and (min-width: 320px) {}
 
 
-@media (max-width: 320px) {}
+    @media (max-width: 900px) and (min-width: 768px) {}
+
+    @media (max-width: 768px) and (min-width: 600px) {}
+
+    @media (max-width: 600px) and (min-width: 480px) {}
+
+
+    @media (max-width: 480px) and (min-width: 320px) {}
+
+
+    @media (max-width: 320px) {}
