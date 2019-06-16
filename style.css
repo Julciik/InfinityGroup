@@ -80,6 +80,7 @@ button:focus {
     right: 0;
     bottom: 10%;
     z-index: 99;
+    height: 200px;
 }
 
 .arrows img {
@@ -355,6 +356,10 @@ button:focus {
     position: relative;
 }
 
+.hidden {
+    display: none;
+}
+
 .clientsWrapper q {
     color: #3c3c3c;
     font-size: 30px;
@@ -422,7 +427,7 @@ button:focus {
     cursor: pointer;
 }
 
-.circles .active {
+.circles .up {
     background-color: #fff;
 }
 
@@ -512,21 +517,21 @@ button:focus {
 
 /* ---- CONTACT ---- */
 
-.contact {
+#contact {
     position: relative;
     background: url(img/bg/contact.png) center no-repeat;
     background-size: cover;
     width: 100%;
 }
 
-.contact .howToContact {
+#contact .howToContact {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 200px;
 }
 
-.contact button {
+#contact button {
     border-radius: 3px;
     background-color: rgb(98, 192, 23);
     font-family: 'Homenaje', sans-serif;
@@ -542,11 +547,11 @@ button:focus {
     letter-spacing: -.5px;
 }
 
-.contact button span {
+#contact button span {
     color: #fff;
 }
 
-.contact .form {
+#contact .form {
     display: none;
 }
 
@@ -651,6 +656,12 @@ footer p {
 
     footer p {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .scrollMenu {
+        width: 700px;
     }
 }
 
