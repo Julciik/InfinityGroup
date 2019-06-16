@@ -343,6 +343,7 @@ button:focus {
     width: inherit;
     flex-direction: row;
     justify-content: center;
+    height: 50%;
 }
 
 .clientsWrapper img {
@@ -354,10 +355,6 @@ button:focus {
     margin-top: 70px;
     margin-bottom: 30px;
     position: relative;
-}
-
-.hidden {
-    display: none;
 }
 
 .clientsWrapper q {
@@ -406,12 +403,18 @@ button:focus {
 .comment {
     width: 40%;
     margin-left: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 2s ease;
 }
 
 .circles {
     height: 15px;
     margin-top: 75px;
     margin-left: 46px;
+    position: absolute;
+    top: 70%;
 }
 
 .circles div {
@@ -421,6 +424,7 @@ button:focus {
     background-color: rgba(255, 255, 255, .7);
     display: inline-block;
     margin: 0 10px;
+    transition: .7s ease;
 }
 
 .circles div:hover {
@@ -434,6 +438,10 @@ button:focus {
 #clients .numOfSection span {
     color: #fff;
     border-bottom: 1px solid #fff;
+}
+
+.hidden {
+    display: none;
 }
 
 /* ---- PRODUCTS ---- */
@@ -779,10 +787,9 @@ footer p {
     .comment {
         margin-left: 0;
         width: 70%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        text-align: center;
     }
 
     .clientsWrapper blockquote {
@@ -947,10 +954,9 @@ footer p {
     .comment {
         margin-left: 0;
         width: 70%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        text-align: center;
     }
 
     .clientsWrapper blockquote {
@@ -1122,10 +1128,9 @@ footer p {
     .comment {
         margin-left: 0;
         width: 70%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        text-align: center;
     }
 
     #clients {
@@ -1315,10 +1320,8 @@ footer p {
     .comment {
         margin-left: 0;
         width: 70%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     #clients {

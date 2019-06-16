@@ -13,7 +13,13 @@ const clientsPosition = document.getElementById("clients").offsetTop;
 const productsPosition = document.getElementById("products").offsetTop;
 const mapPosition = document.getElementById("contactMap").offsetTop;
 const contactPosition = document.getElementById("contact").offsetTop;
-const comments = document.querySelectorAll(".comment");
+const firstComment = document.querySelector(".firstC");
+const secondComment = document.querySelector(".secondC");
+const thirdComment = document.querySelector(".thirdC");
+const firstCircle = document.querySelector(".circles div:first-child");
+const secondCircle = document.querySelector(".circles div:nth-child(2)");
+const thirdCircle = document.querySelector(".circles div:last-child");
+const clientsWrapper = document.querySelector(".clientsWrapper");
 
 const scrollFixedMenu = () => {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 && media.matches) {
@@ -77,10 +83,38 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("rotate");
     if (hamburger.classList.contains("active")) {
         hamburger.classList.remove("active");
-    } else hamburger.classList.add("active")
+    } else hamburger.classList.add("active");
 
 });
 
 cookieBtn.addEventListener("click", () => {
     cookieWin.style.visibility = "hidden";
-})
+});
+
+
+firstCircle.addEventListener("click", () => {
+    firstComment.classList.remove("hidden");
+    secondComment.classList.add("hidden");
+    thirdComment.classList.add("hidden");
+    firstCircle.classList.add("up");
+    secondCircle.classList.remove("up");
+    thirdCircle.classList.remove("up");
+});
+
+secondCircle.addEventListener("click", () => {
+    firstComment.classList.add("hidden");
+    secondComment.classList.remove("hidden");
+    thirdComment.classList.add("hidden");
+    firstCircle.classList.remove("up");
+    secondCircle.classList.add("up");
+    thirdCircle.classList.remove("up");
+});
+
+thirdCircle.addEventListener("click", () => {
+    firstComment.classList.add("hidden");
+    secondComment.classList.add("hidden");
+    thirdComment.classList.remove("hidden");
+    firstCircle.classList.remove("up");
+    secondCircle.classList.remove("up");
+    thirdCircle.classList.add("up");
+});
