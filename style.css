@@ -131,12 +131,13 @@ button:focus {
 
 .scrollMenu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100px;
-    width: 950px;
+    width: 70%;
     background-color: #333333;
     transition: .5s;
+    z-index: 99;
 }
 
 .scrollMenu div {
@@ -160,11 +161,11 @@ button:focus {
     margin-top: 5px;
 }
 
-/* ---- NAV ---- */
-
-.logo {
-    z-index: 2;
+.scrollMenu div:last-of-type {
+    position: relative;
 }
+
+/* ---- NAV ---- */
 
 .logo img {
     padding: 0 17px;
@@ -179,7 +180,7 @@ button:focus {
 }
 
 .menu {
-    z-index: 1;
+    z-index: 100;
 }
 
 .menu ul {
