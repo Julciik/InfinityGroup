@@ -488,10 +488,6 @@ button:focus {
     cursor: pointer;
 }
 
-#products .imgOfProducts div:hover {
-    background-color: green;
-}
-
 /* ---- MAP ---- */
 
 #contactMap {
@@ -573,11 +569,11 @@ button:focus {
     margin: 0 23%;
 }
 
-#contact .contactForm p {
+#contact .contactForm .beginning {
     font-size: 22px;
 }
 
-#contact form p {
+#contact .formText {
     margin-top: 60px;
     margin-bottom: 35px;
     font-size: 30px;
@@ -592,7 +588,7 @@ button:focus {
     background-color: #F9F9F9;
     border-bottom: 1px solid #000;
     padding: 5px;
-    width: 230px;
+    width: 180px;
     height: 7px;
 }
 
@@ -715,7 +711,7 @@ footer p {
 /* ---- RWD ---- */
 
 
-@media (max-width: 1200px) and (min-width: 900px) {
+@media (max-width: 1300px) and (min-width: 900px) {
 
     #mission q {
         font-size: 20px;
@@ -733,12 +729,20 @@ footer p {
         width: 30%;
     }
 
+    #contactMap {
+        background-size: auto;
+    }
+
     #contactMap img {
         margin-left: 10%;
     }
 
     #contactMap .numOfSection {
         top: 50%;
+    }
+
+    #contact .formText {
+        font-size: 26px;
     }
 
     footer p {
@@ -803,6 +807,10 @@ footer p {
 
     .contact .howToContact {
         justify-content: space-evenly;
+    }
+
+    #contact .formText {
+        font-size: 26px;
     }
 
     .scrollMenu {
@@ -955,6 +963,23 @@ footer p {
 
     .contact .howToContact {
         justify-content: space-evenly;
+    }
+
+    #contact .contactForm .beginning {
+        font-size: 17px;
+    }
+
+    #contact .formText {
+        font-size: 22px;
+    }
+
+    #contact form label {
+        font-size: 17px;
+    }
+
+    #contact form input[type="text"],
+    #contact form input[type="email"] {
+        width: 120px;
     }
 
     .contact button {
@@ -1116,6 +1141,24 @@ footer p {
     .contact .howToContact {
         justify-content: space-evenly;
     }
+
+    #contact .contactForm .beginning {
+        font-size: 16px;
+    }
+
+    #contact .formText {
+        font-size: 21px;
+    }
+
+    #contact form label {
+        font-size: 16px;
+    }
+
+    #contact form input[type="text"],
+    #contact form input[type="email"] {
+        width: 120px;
+    }
+
 
     .contact button {
         width: 150px;
@@ -1308,6 +1351,29 @@ footer p {
 
     .contact .howToContact {
         justify-content: space-evenly;
+    }
+
+    #contact .contactForm .beginning {
+        font-size: 16px;
+    }
+
+    #contact .formText {
+        font-size: 18px;
+    }
+
+    #contact form label {
+        font-size: 16px;
+    }
+
+    #contact form input[type="text"],
+    #contact form input[type="email"] {
+        width: 120px;
+    }
+
+
+    .contact button {
+        width: 150px;
+        font-size: 14px;
     }
 
     .contact button {
