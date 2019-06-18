@@ -20,6 +20,15 @@ const firstCircle = document.querySelector(".circles div:first-child");
 const secondCircle = document.querySelector(".circles div:nth-child(2)");
 const thirdCircle = document.querySelector(".circles div:last-child");
 const clientsWrapper = document.querySelector(".clientsWrapper");
+const contactBtn = document.querySelector(".howToContact button");
+const contactForm = document.querySelector(".contactForm");
+const contactArrow = document.querySelector(".contactArrow");
+const name = document.forms["form"]["name"];
+const company = document.forms["form"]["company"];
+const telephone = document.forms["form"]["telephone"];
+const email = document.forms["form"]["email"];
+const submitBtn = document.querySelector(".contactForm button");
+const checkInput = document.getElementById("accept");
 
 const scrollFixedMenu = () => {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 && media.matches) {
@@ -118,3 +127,52 @@ thirdCircle.addEventListener("click", () => {
     secondCircle.classList.remove("up");
     thirdCircle.classList.add("up");
 });
+
+contactBtn.addEventListener("click", () => {
+    if (contactForm.style.display == "none") {
+        contactForm.style.display = "flex";
+        contactArrow.innerHTML = "&uarr;";
+    } else {
+        contactForm.style.display = "none";
+        contactArrow.innerHTML = "&darr;";
+    }
+})
+
+const isDigit = (phone) => {
+    const regex = /^\d{9}$/;
+    return regex.test(phone);
+}
+
+const validate = () => {
+    if (name.value == "") {
+        alert("Please provide your name!");
+        return false;
+    }
+    if (company.value == "") {
+        alert("Please provide your company name!");
+        return false;
+    }
+    if (telephone.value == "") {
+        alert("Please provide your number phone!");
+        return false;
+    }
+    if (email.value == "") {
+        alert("Please provide your email!");
+        return false;
+    }
+    if (isDigit(telephone.value) == false) {
+        alert("Your telephone number is not valid!");
+        return false;
+    }
+    if (isDigit(telephone.value) == false) {
+        alert("Your telephone number is not valid!");
+        return false;
+    }
+    if (checkInput.checked == false) {
+        alert("Please accepts terms!");
+        return false;
+    }
+    submitBtn.submit();
+}
+
+submitBtn.addEventListener("click", validate);
