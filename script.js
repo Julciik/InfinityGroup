@@ -64,7 +64,7 @@ const jumpToSectionUp = () => {
     } else if (window.scrollY >= mapPosition && window.scrollY < contactPosition) {
         upArr.href = "#products";
     } else if (window.scrollY >= contactPosition) {
-        upArr.href = "#mapContact";
+        upArr.href = "#contactMap";
     }
 };
 
