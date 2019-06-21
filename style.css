@@ -482,8 +482,6 @@ button:focus {
     text-align: center;
 }
 
-.products .imgOfProducts img {}
-
 #products .imgOfProducts img:hover {
     cursor: pointer;
 }
